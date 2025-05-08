@@ -66,7 +66,7 @@ body {
                 url('https://images.unsplash.com/photo-1490818387583-1baba5e638af?auto=format&fit=crop&q=80') no-repeat center center;
     background-size: cover;
     color: white;
-    padding: 190px 0 100px;
+    padding: 190px 0 200px;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     margin-bottom: 50px;
     text-shadow: 0 2px 4px rgba(0,0,0,0.2);
