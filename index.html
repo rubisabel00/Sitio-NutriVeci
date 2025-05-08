@@ -92,27 +92,86 @@
     <!-- Tecnologías Section -->
     <section class="section-padding" id="tecnologias">
         <div class="container">
-            <h2 class="text-center mb-5">Tecnologías Utilizadas</h2>
+            <h2 class="text-center mb-5">Tecnologías y Modelos de IA Utilizados</h2>
             <div class="row">
-                <div class="col-lg-8 mx-auto">
+                <div class="col-lg-10 mx-auto">
                     <div class="tecnologias-list">
-                        <div class="row">
+                        <div class="row gy-4">
+                            <!-- Backend -->
                             <div class="col-md-6">
-                                <h4><i class="fas fa-mobile-alt"></i> Frontend App</h4>
-                                <p>Flutter / React Native</p>
-                                
-                                <h4><i class="fas fa-server"></i> Backend</h4>
-                                <p>Firebase o Node.js + Express</p>
+                                <div class="tech-category">
+                                    <h4>
+                                        <i class="fas fa-server feature-icon"></i>
+                                        Backend
+                                    </h4>
+                                    <ul class="list-unstyled">
+                                        <li><strong>Python</strong> con FastAPI</li>
+                                        <li><strong>Supabase</strong> (PostgreSQL)</li>
+                                        <li><strong>Python-Telegram-Bot</strong></li>
+                                        <li><strong>SQLAlchemy</strong> y Pydantic</li>
+                                        <li><strong>JWT</strong> y Asyncio</li>
+                                    </ul>
+                                </div>
+
+                                <div class="tech-category">
+                                    <h4>
+                                        <i class="fas fa-laptop-code feature-icon"></i>
+                                        Frontend
+                                    </h4>
+                                    <ul class="list-unstyled">
+                                        <li><strong>React</strong></li>
+                                        <li><strong>HTML/CSS/JavaScript</strong></li>
+                                    </ul>
+                                </div>
                             </div>
+
+                            <!-- IA y Datos -->
                             <div class="col-md-6">
-                                <h4><i class="fas fa-brain"></i> Motor IA Recetas</h4>
-                                <p>NLP + Clasificador ML</p>
-                                
-                                <h4><i class="fas fa-database"></i> Base de datos</h4>
-                                <p>Firestore o PostgreSQL</p>
+                                <div class="tech-category">
+                                    <h4>
+                                        <i class="fas fa-brain feature-icon"></i>
+                                        Modelos de IA
+                                    </h4>
+                                    <h5>Procesamiento de Lenguaje Natural</h5>
+                                    <ul class="list-unstyled">
+                                        <li><strong>Gemini 1.5 Flash</strong></li>
+                                    </ul>
+                                    
+                                    <h5>Visión por Computadora</h5>
+                                    <ul class="list-unstyled">
+                                        <li><strong>Clarifai API</strong></li>
+                                        <li><strong>Azure AI Vision</strong></li>
+                                    </ul>
+                                </div>
+
+                                <div class="tech-category">
+                                    <h4>
+                                        <i class="fas fa-database feature-icon"></i>
+                                        Herramientas y Datasets
+                                    </h4>
+                                    <ul class="list-unstyled">
+                                        <li><strong>Pandas</strong> y NumPy</li>
+                                        <li><strong>Kaggle API</strong></li>
+                                        <li><strong>USDA FoodData Central</strong></li>
+                                        <li><strong>Food.com Recipes</strong></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+            
+            <!-- Collaborative Filtering Section -->
+            <div class="row mt-5">
+                <div class="col-12 text-center">
+                    <h3 class="mb-4">Sistema de Recomendación: Collaborative Filtering</h3>
+                    <img src="colaborative filtering1.png" alt="Collaborative Filtering Diagram" class="img-fluid mb-4" style="max-width: 600px;">
+                    <p class="lead">
+                        El Collaborative Filtering es una técnica de recomendación que sugiere recetas basándose en las preferencias similares de otros usuarios. 
+                        Analiza patrones de comportamiento y calificaciones para predecir qué recetas podrían gustarle a un usuario basándose en las elecciones 
+                        de usuarios con gustos similares.
+                    </p>
                 </div>
             </div>
         </div>

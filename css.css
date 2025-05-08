@@ -183,6 +183,71 @@ h2::after {
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
 
+.tecnologias-list h4 {
+    color: var(--primary-color);
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tecnologias-list h4:first-child {
+    margin-top: 0;
+}
+
+.tecnologias-list h5 {
+    color: var(--secondary-color);
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding-left: 25px;
+}
+
+.tecnologias-list ul {
+    margin-bottom: 20px;
+}
+
+.tecnologias-list li {
+    padding: 8px 0;
+    margin-left: 25px;
+    position: relative;
+    transition: transform 0.2s ease;
+}
+
+.tecnologias-list li:before {
+    content: '•';
+    color: var(--secondary-color);
+    font-weight: bold;
+    position: absolute;
+    left: -15px;
+}
+
+.tecnologias-list li:hover {
+    transform: translateX(5px);
+    color: var(--primary-color);
+}
+
+.tecnologias-list .feature-icon {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.tech-category {
+    background: rgba(0, 121, 107, 0.05);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.tech-category:hover {
+    background: rgba(0, 121, 107, 0.1);
+    transform: translateY(-5px);
+}
+
 .funcionalidad-item {
     background: var(--white);
     padding: 25px;
