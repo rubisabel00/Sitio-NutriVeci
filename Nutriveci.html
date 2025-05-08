@@ -1,0 +1,227 @@
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NutriVeci - Comida buena, bonita y balanceada para todos</title>
+  <link rel="icon" type="image/png" href="NutriVeci-logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --primary-color: #00796B;
+      --secondary-color: #4DB6AC;
+      --text-color: #2C3E50;
+      --light-bg: #F8F9FA;
+      --white: #FFFFFF;
+      --gradient-start: #00796B;
+      --gradient-end: #4DB6AC;
+    }
+
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      color: var(--text-color);
+      background-color: var(--light-bg);
+      line-height: 1.6;
+      margin: 0;
+      padding-top: 80px;
+    }
+
+    .navbar {
+      background-color: var(--white) !important;
+      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+    }
+
+    .navbar-brand {
+      color: var(--primary-color) !important;
+      font-weight: 600;
+    }
+
+    .navbar-brand img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+      color: white;
+      padding: 60px 0;
+      margin-bottom: 40px;
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    }
+
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    section {
+      background: var(--white);
+      border-radius: 12px;
+      padding: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease;
+    }
+
+    section:hover {
+      transform: translateY(-5px);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+
+    h2 {
+      color: var(--primary-color);
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      position: relative;
+      display: inline-block;
+    }
+
+    h2::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+      border-radius: 3px;
+    }
+
+    .icon {
+      color: var(--primary-color);
+      margin-right: 10px;
+    }
+
+    .telegram-link {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+      color: white;
+      text-decoration: none;
+      padding: 12px 30px;
+      border-radius: 50px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      margin-top: 20px;
+    }
+
+    .telegram-link:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      background: linear-gradient(135deg, var(--gradient-end), var(--gradient-start));
+      color: white;
+      text-decoration: none;
+    }
+
+    #clock {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: var(--white);
+      color: var(--primary-color);
+      padding: 10px 20px;
+      border-radius: 50px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      font-weight: 500;
+      z-index: 1000;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      margin-bottom: 1rem;
+      padding-left: 1.5rem;
+      position: relative;
+    }
+
+    ul li::before {
+      content: '•';
+      color: var(--primary-color);
+      position: absolute;
+      left: 0;
+      font-weight: bold;
+    }
+
+    a {
+      color: var(--primary-color);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: var(--secondary-color);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="NutriVeci-logo.png" alt="NutriVeci Logo"> NutriVeci</a>
+    </div>
+  </nav>
+
+  <header>
+    <h1>Nutriveci</h1>
+    <p>Tu fuente confiable de información nutricional</p>
+  </header>
+
+  <main>
+    <section>
+      <h2><i class="fas fa-seedling icon"></i>¿Qué es una buena nutrición?</h2>
+      <p>Una buena nutrición es fundamental para una vida saludable. Implica consumir una dieta equilibrada que incluya
+        una variedad de alimentos ricos en nutrientes: frutas, verduras, proteínas magras, granos enteros y grasas
+        saludables.</p>
+
+      <section>
+        <h2><i class="fas fa-lightbulb icon"></i>Consejos clave para una alimentación saludable</h2>
+        <ul>
+          <li>Come más frutas y verduras.</li>
+          <li>Reduce el consumo de azúcar y sal.</li>
+          <li>Elige grasas saludables como las que se encuentran en el aguacate y el aceite de oliva.</li>
+          <li>Mantente hidratado bebiendo suficiente agua cada día.</li>
+        </ul>
+        <p>Consulta más consejos en el sitio oficial del Ministerio de Salud de Colombia: <a
+            href="https://www.minsalud.gov.co/salud/Paginas/alimentacion-saludable.aspx" target="_blank">Alimentación
+            Saludable - Minsalud</a></p>
+      </section>
+
+      <section>
+        <h2><i class="fas fa-history icon"></i>Historia</h2>
+        <p>Nutriveci nació con la misión de fomentar hábitos saludables y generar un impacto social positivo en personas
+          que desean mejorar su calidad de vida. Nuestro chatbot fue diseñado como una herramienta accesible y confiable
+          para quienes están dando sus primeros pasos hacia una mejor nutrición.</p>
+      </section>
+
+      <section>
+        <h2><i class="fas fa-concierge-bell icon"></i>Servicios</h2>
+        <p>Ofrecemos orientación nutricional personalizada y acceso a nuestro chatbot interactivo en Telegram para
+          resolver tus dudas.</p>
+        <a href="https://t.me/tu_chatbot" target="_blank" class="telegram-link"><i class="fab fa-telegram icon"></i>Ir
+          al chatbot en Telegram</a>
+        <div id="clock">Hora actual: --:--:--</div>
+      </section>
+  </main>
+
+  <script>
+    function updateClock() {
+      const clock = document.getElementById('clock');
+      const now = new Date();
+      const timeString = now.toLocaleTimeString();
+      clock.textContent = 'Hora actual: ' + timeString;
+    }
+    setInterval(updateClock, 1000);
+    updateClock();
+  </script>
+</body>
+
+</html>
